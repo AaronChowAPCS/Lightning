@@ -92,8 +92,6 @@ public void draw()
   if(counterClockWise)
     apollo.spin(10);
 
-  apollo.show();
-  apollo.move();
 
 //Moves,shows, and removes bullet after a collision
   for(int index = 0; index < bulletHolder.size(); index++){
@@ -113,6 +111,9 @@ public void draw()
       destroyBullet = false;
     }
   }
+
+  apollo.show();
+  apollo.move();
 /*
   if(gameOver){
     background(0);
@@ -121,7 +122,7 @@ public void draw()
     fill(255);
     text("You died",250,250);
   }
-  */
+*/
 }
 
 public void keyPressed()

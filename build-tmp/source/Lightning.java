@@ -108,8 +108,6 @@ public void draw()
   if(counterClockWise)
     apollo.spin(10);
 
-  apollo.show();
-  apollo.move();
 
 //Moves,shows, and removes bullet after a collision
   for(int index = 0; index < bulletHolder.size(); index++){
@@ -129,6 +127,9 @@ public void draw()
       destroyBullet = false;
     }
   }
+
+  apollo.show();
+  apollo.move();
 /*
   if(gameOver){
     background(0);
